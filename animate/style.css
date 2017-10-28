@@ -1,15 +1,85 @@
 @import url('https://fonts.googleapis.com/css?family=Yantramanav:100');
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400');
 
-
+html,body{
+	margin:0;
+	padding:0;
+	height:100%;
+	width:100%;
+}
+.intro{
+	height:100%;
+	width:100%;
+	margin:auto;
+	background:url('./img/1.jpg') no-repeat;
+	display:table;
+	background-size: cover;
+	background-position: center center;
+}
+.intro .inner{
+	display:table-cell;
+	vertical-align:middle;
+	width:100%;
+	max-width:none;
+}
+.content{
+	max-width:600px;
+	margin:0 auto;
+	text-align:center;
+	padding-bottom:20%;
+}
+.content h1{
+	font-family:'Yantramanav',sans-serif;
+	font-size:600%;
+	font-weight:100;
+	color:#fff;
+	line-height:50%;
+}
+.btn{
+	font-family:sans-serif;
+	font-size:135%;
+	color:#fff;
+	text-decoration:none;
+	text-transform:none;
+	border:solid #fff 5px;
+	padding:10px 20px;
+	border-radius:9px;
+}
 
 /*--- Media Queries --*/
 @media screen and (max-width: 900px) {
-
+	.content{
+		padding-bottom:20%;
+	}
+	.content h1{
+		font-size:360%;
+	}
+	.btn{
+		font-size:130%;
+		padding:9px 17px;
+	}
 }
 @media screen and (max-width: 768px) {
-
+	.content{
+		padding-bottom:40%;
+	}
+	.content h1{
+		font-size:300%;
+	}
+	.btn{
+		font-size:110%;
+		padding:9px 17px;
+	}
 }
 @media screen and (max-width: 480px) {
-	
+	.content{
+		padding-bottom:50%;
+	}
+	.content h1{
+		font-size:250%;
+	}
+	.btn{
+		font-size:100%;
+		padding:6px 14px;
+	}
 }
